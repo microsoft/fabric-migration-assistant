@@ -38,7 +38,7 @@ It currently collects metadata for Synapse workspaces, notebooks, Spark pools, a
 Clone the repository and install the required dependencies:
 
 ~~~bash
-git clone <repo-url>
+git clone https://github.com/microsoft/fabric-migration-assistant.git
 cd synapse-discovery
 pip install -r requirements.txt
 python fetch_all_synapse_spark_metadata.py config.json
