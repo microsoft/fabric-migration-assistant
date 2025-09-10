@@ -35,12 +35,36 @@ It currently collects metadata for Synapse workspaces, notebooks, Spark pools, a
 
 ## 📦 Installation
 
-Clone the repository and install the required dependencies:
+Make sure you run the tool in **Azure Cloud Shell**. Follow these steps:
+
+1. **Clone the repository**:
 
 ~~~bash
 git clone https://github.com/microsoft/fabric-migration-assistant.git
-cd synapse-discovery
+cd fabric-migration-assistant
+~~~
+
+2. **Install Python Dependencies**:
+~~~bash   
 pip install -r requirements.txt
+~~~
+
+3.**Update the configuration file**:
+~~~bash
+cd tooling
+~~~
+Edit the `config.json` file and add your Azure subscription IDs:
+
+~~~json
+{
+  "subscription_ids": [
+    "id_here"
+  ]
+}
+~~~
+
+4. Run the script to fetch Synapse Spark metadata
+~~~
 python fetch_all_synapse_spark_metadata.py config.json
 ~~~
 
