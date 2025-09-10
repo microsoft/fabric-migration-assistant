@@ -39,7 +39,7 @@ Clone the repository and install the required dependencies:
 
 ~~~bash
 git clone https://github.com/microsoft/fabric-migration-assistant.git
-cd synapse-discovery
+cd fabric-migration-assistant
 pip install -r requirements.txt
 python fetch_all_synapse_spark_metadata.py config.json
 ~~~
