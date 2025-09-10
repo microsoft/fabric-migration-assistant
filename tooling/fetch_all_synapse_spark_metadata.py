@@ -12,7 +12,7 @@ def load_config(config_file="config.json"):
         # Create a sample config file if it doesn't exist
         sample_config = {
             "subscription_ids": [
-                "c1f2cd4b-4e91-4a9f-9211-07df640f8610"
+                "<your-subscription-id-here>"
             ]
         }
         with open(config_file, 'w') as f:
@@ -132,7 +132,6 @@ def extract_workspace_details(ws):
         "id": ws.id,
         "location": ws.location,
         "provisioning_state": props.get("provisioningState"),
-        "sql_admin_login": props.get("sqlAdministratorLogin"),
         "managed_resource_group": props.get("managedResourceGroupName"),
         "workspace_uid": props.get("workspaceUID"),
         "private_endpoint_connections": pe_connections,
@@ -242,7 +241,6 @@ def print_workspace_details(ws):
     print(f"   • ID: {ws.id}")
     print(f"   • Location: {ws.location}")
     print(f"   • Provisioning State: {props.get('provisioningState')}")
-    print(f"   • SQL Admin Login: {props.get('sqlAdministratorLogin')}")
     print(f"   • Managed Resource Group: {props.get('managedResourceGroupName')}")
     print(f"   • Workspace UID: {props.get('workspaceUID')}")
     
