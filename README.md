@@ -41,7 +41,7 @@ Clone the repository and install the required dependencies:
 git clone <repo-url>
 cd synapse-discovery
 pip install -r requirements.txt
-python metadata.py config.json
+python fetch_all_synapse_spark_metadata.py config.json
 ~~~
 
 ## 🚧 Upcoming Features
