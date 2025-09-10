@@ -1,4 +1,4 @@
-# Synapse Spark to Fabric Spark Migration Assistant
+# Synapse Spark Discovery Tool
 
 The **Synapse Discovery Tool** is a migration assistant that helps you explore the configuration of Azure Synapse Analytics environments across one or more Azure subscriptions. 
 It currently collects metadata for Synapse workspaces, notebooks, Spark pools, and Spark job definitions, and can export results in JSON for migrating to Fabric. 
@@ -70,4 +70,4 @@ python fetch_all_synapse_spark_metadata.py config.json
 
 ## 🚧 Upcoming Features
 - Discovery of pipelines that invoke Notebooks  
-- Discovery of pipelines that invoke Spark Job Definitions (SJD) 
+- Discovery of pipelines that invoke Spark Job Definitions (SJD)
